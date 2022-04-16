@@ -36,6 +36,7 @@ class simpleKNN:
         ans = []
         neighbors = self.getNeighbors(testInstance)
         neighbors = pd.DataFrame(neighbors)
+        # print(neighbors)
         k = self.k
         for i in range(k):
             ans.append(neighbors.iloc[i].values[0][neighbors.iloc[0][0].shape[0]-1])
