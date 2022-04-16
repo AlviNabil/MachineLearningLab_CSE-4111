@@ -8,7 +8,7 @@ def gradDes(x: np.ndarray, y:np.ndarray)->np.ndarray:
     learning_rate = 0.08
 
     for i in range(iterations):
-        y_predicted = m_curr*x+c_curr
+        y_predicted = m1_curr*x1+c_curr
         # print(type(y_predicted))
         cost = (1/(2*n))*sum(val**2 for val in (y_predicted-y))
         m_d = (2/n)*sum(x*(y_predicted-y))
